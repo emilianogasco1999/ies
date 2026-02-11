@@ -13,7 +13,7 @@ const Home = () => {
       <Portada
         titulo={'Pre-inscripciones 2026'}
         subtitulo={'Están abiertas las pre-inscripciones para las ofertas del Instituto de Enseñanza Superior de Concepción'}
-        link={'https://forms.gle/JHd7hJBrw7ARJGDXA'}
+        // link={'https://forms.gle/JHd7hJBrw7ARJGDXA'}
       />
       <div className="about">
         <div className="container" data-aos="fade-up">
