@@ -11,7 +11,7 @@ const Home = () => {
   return (
     <>
       <Portada
-        titulo={'Pre-inscripciones 2025'}
+        titulo={'Pre-inscripciones 2026'}
         subtitulo={'Están abiertas las pre-inscripciones para las ofertas del Instituto de Enseñanza Superior de Concepción'}
         link={'https://forms.gle/JHd7hJBrw7ARJGDXA'}
       />

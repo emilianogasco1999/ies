@@ -19,11 +19,11 @@ export const navegacion = [
     direccion: 'contacto',
     title: 'Contacto'
   },
-  {
-    direccion: 'login',
-    title: 'Login',
-    icon: 'fa-user'
-  },
+  // {
+  //   direccion: 'login',
+  //   title: 'Login',
+  //   icon: 'fa-user'
+  // },
 ];
 
 export const carreras = [

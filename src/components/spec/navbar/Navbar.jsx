@@ -1,22 +1,21 @@
-import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
-import logo from '../../../assets/img/logo/logo.png';
-import Links from '../../gen/links/Links';
-import ScrollToTop from '../scrollToTop/ScrollToTop';
-import { navegacion } from '../../../utils/navegacion/navegacion';
+import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
+import logo from "../../../assets/img/logo/logo iesc.png";
+import Links from "../../gen/links/Links";
+import ScrollToTop from "../scrollToTop/ScrollToTop";
+import { navegacion } from "../../../utils/navegacion/navegacion";
 
 const Navbar = () => {
-
   const [isActive, setIsActive] = useState(false);
   useEffect(() => {
     if (isActive) {
-      document.body.classList.add('mobile-nav-active');
-      document.body.classList.add('mobile-nav-active');
+      document.body.classList.add("mobile-nav-active");
+      document.body.classList.add("mobile-nav-active");
     } else {
-      document.body.classList.remove('mobile-nav-active');
+      document.body.classList.remove("mobile-nav-active");
     }
     return () => {
-      document.body.classList.remove('mobile-nav-active');
+      document.body.classList.remove("mobile-nav-active");
     };
   }, [isActive]);
 
@@ -30,9 +29,13 @@ const Navbar = () => {
         <Link to="/" className="logo me-auto">
           <img src={logo} alt="" className="img-fluid" />
         </Link>
-        <nav className={isActive ? 'mobile-nav d-lg-none' : 'nav-menu d-none d-lg-block'}>
+        <nav
+          className={
+            isActive ? "mobile-nav d-lg-none" : "nav-menu d-none d-lg-block"
+          }
+        >
           <ul>
-            {navegacion.map(direccion => (
+            {navegacion.map((direccion) => (
               <li key={direccion.direccion}>
                 <Links
                   direccion={`/${direccion.direccion}`}
@@ -40,9 +43,8 @@ const Navbar = () => {
                   icon={direccion.icon}
                 />
               </li>
-            ))
-            }
-            {/* 
+            ))}
+            {/*             
            
             <li className="drop-down">
               <a href="#">Finales <i className="fas fa-chevron-down"></i></a>
@@ -62,18 +64,19 @@ const Navbar = () => {
                 ></i>
               </a>
             </li> */}
-
           </ul>
         </nav>
         <button
           type="button"
           className="mobile-nav-toggle d-lg-none"
-          onClick={toggleClass}>
+          onClick={toggleClass}
+        >
           <i className="fas fa-bars"></i>
         </button>
-
       </div>
-      {isActive && <div className="mobile-nav-overly" onClick={toggleClass}></div>}
+      {isActive && (
+        <div className="mobile-nav-overly" onClick={toggleClass}></div>
+      )}
     </header>
   );
 };

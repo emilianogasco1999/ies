@@ -8,7 +8,7 @@ import Inscripciones from "./pages/inscripciones/Inscripciones"
 import Nosotros from "./pages/nosotros/Nosotros"
 import Carrera from './components/gen/carrera/Carrera';
 import Error404 from './pages/error/Error404';
-import Login from './pages/login/Login';
+// import Login from './pages/login/Login';
 
 
 
@@ -27,7 +27,7 @@ function App() {
           <Route path='/contacto' element={<Contacto />}></Route>
           <Route path='/carrera/:id' element={<Carrera />}></Route>
           <Route path='/error404' element={<Error404 />} />
-          <Route path='/login' element={<Login />} />
+          {/* <Route path='/login' element={<Login />} /> */}
           <Route path='*' element={<Error404 />}></Route>
         </Routes>
         <Footer />

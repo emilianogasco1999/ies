@@ -1,4 +1,3 @@
-import React from 'react'
 import Breadcrumbs from '../../components/gen/breadcrumbs/Breadcrumbs'
 import Title from '../../components/gen/title/Title'
 
@@ -6,7 +5,7 @@ const Inscripciones = () => {
   return (
     <>
       <Breadcrumbs
-        title={'Inscripciones 2025'}
+        title={'Inscripciones 2026'}
         subtitle={'Requisitos para aspirantes'}
       />
       <div className="container">
@@ -14,7 +13,7 @@ const Inscripciones = () => {
           title={'Inscripciones Abiertas'}
         />
         <div className="about">
-          <p>Se dio inicio a las inscripciones para el Ciclo Lectivo 2025.</p>
+          <p>Se dio inicio a las inscripciones para el Ciclo Lectivo 2026.</p>
           <p>El trámite de inscripción se deberá llevar a cabo en nuestra Institución de Lunes a Viernes de 19:00 a 22:00 hs.</p>
           <p> La documentación solicitada es la siguiente:</p>
           <ul className='list-group list-group-flush'>
